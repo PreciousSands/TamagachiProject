@@ -1,0 +1,1 @@
+Tamagachi Project Readme
