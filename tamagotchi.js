@@ -10,14 +10,14 @@ class Tamagotchi {
 const milktchi = new Tamagotchi('Milktchi', 5, 'Brown', 'Pink', 'Black', 'Black')
 console.log(milktchi)
 
-// Trying out jquery because i really wanted a fade in 
+// Trying out fade in because i really wanted a fade in 
 
 let opacity = 0;
         let intervalID = 0;
         window.onload = fadeIn;
           
         function fadeIn() {
-            setInterval(show, 200);
+            setInterval(show, 300);
         }
           
         function show() {
