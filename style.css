@@ -1,13 +1,69 @@
 body {
 margin: 0;
-padding: 0;
+padding: 60px;
 text-align: center;
-background-color: burlywood;
+/* background-color: burlywood; */
+background-image: url('./images/giphy\ 7.gif');
+background-repeat: no-repeat;
+background-size: cover;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-size: x-large;
+color: #dc143c;
 }
+
 h1 {
-    padding-top: 1em;
+    padding-top: 2em;
+    text-align: center;
     color: deeppink;
 }
-p {
-    margin: 2em 0;
+/* Add your CSS styles here */
+
+.tamagotchi {
+    margin: 20px;
+    padding: 20px;
+    /* border: 2px solid #ad4444; */
+    /* border-radius: 10px; */
+    /* background-color: #be3c3c; */
+}
+
+.tamagotchi img {
+    max-width: 100%;
+    max-height: 100%;
+    block-size: 9cm;
+}
+.tamagotchi-name {
+    font-family:Chalkduster;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    font-family: Chalkduster;
+}
+/* 
+.stat {
+    flex: 1;
+    padding: 10px;
+    background-color: #63cdc0;
+    border-radius: 100px;
+    text-align: center;
+} */
+
+button {
+    display: block;
+    margin: 10px auto;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e22fd3;
+    color: #fff;
+    cursor: pointer;
+}
+
+.age-display {
+    font-weight: bold;
+    color: fuchsia;
+    font-size: xx-large;
+    font-family: Chalkduster;
 }

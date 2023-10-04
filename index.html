@@ -1,24 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="./tamagotchi.js" defer></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" defer
-        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <link  rel="stylesheet" href="./style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Precious' Tamagotchi Mini Project</title>
+    <title>Tamagotchi Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="tamagotchi.js"></script>
 </head>
-
-<body id="h1" style="opacity: 0;">
-    <br>
-    <h1> Welcome To The World Of Milktchi ! 
-        <script type="text/javascript"></script>
-    </h1>
-    <div style="text-align: center;">
-    <img src="images/Milktchi..png">
+<body>
+    <div class="contai"></div>
+        <div>
+            <h3 style="color: white;"></h3>
+        </div>
+    <div class="tamagotchi">
+        <h1 class="tamagotchi-name">Welcome To The World Of Milktchi !</h1>
+        <img src="images/Milktchi_animated_sprite.webp" alt="Tamagotchi">
+        <div class="stats">
+            <div class="stat">
+                <h2>Hunger</h2>
+                <progress id="hunger-level" max="100" value="100"></progress>
+                <button id="eat-button">Feed</button>
+            </div>
+            <div class="stat">
+                <h2>Boredom</h2>
+                <progress id="boredom-level" max="100" value="100"></progress>
+                <button id="play-button">Play</button>
+            </div>
+            <div class="stat">
+                <h2>Sleepiness</h2>
+                <progress id="sleepiness-level" max="100" value="100"></progress>
+                <button id="sleep-button">Sleep</button>
+            </div>
+        </div>
+        <p class="age-display">Age: <span id="age">0</span></p>
     </div>
-   
     
 </body>
 </html>
