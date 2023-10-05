@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const setNameButton = document.getElementById("set-name-button");
     const tamagotchiName = document.querySelector(".tamagotchi-name");
 
+    // Function for the pet to move accross the screen once its' alive and to stop once it's dead
     function startPetAnimation() {
         const petImage = document.getElementById("pet-image");
         petImage.classList.add("pet-animation");
@@ -77,7 +78,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    // Rest of your code remains the same
+    
 
     function changePetImageByAge() {
         if (pet.age > 15) {
@@ -109,11 +110,22 @@ document.addEventListener("DOMContentLoaded", function () {
         checkGameOver();
     }
 
+//  Once pet dies I want an alert to pop up saying that they died
     function checkGameOver() {
         if (pet.hunger === 0 || pet.boredom === 0 || pet.sleepiness === 0) {
             clearInterval(pet.ageInterval);
             clearInterval(pet.gameInterval);
             alert(`Game over! ${pet.name} has passed away.`);
+
+            // function of a gif to pop up on the page once your pet dies
+            function showAlert() {
+                const alertContainer = document.getElementById("alert-container");
+                alertContainer.style.display = "block";
+            }
+                showAlert();
+        
         }
     };
+    
+    
 });
