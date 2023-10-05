@@ -27,6 +27,8 @@ document.addEventListener("DOMContentLoaded", function () {
     function isPetAlive() {
         return true; 
     }
+
+    // Function for the ability to change the default pet name to the name a player wants
     setNameButton.addEventListener("click", function () {
         const newName = prompt("Enter new name for your pet:");
         if (newName !== null && newName.trim() !== "") {
@@ -36,6 +38,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 //  buttons
+
+// eat button function
     eatButton.addEventListener("click", function () {
         if (pet.hunger < 100) {
             pet.hunger += 10;
@@ -43,13 +47,14 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
+// play button function
     playButton.addEventListener("click", function () {
         if (pet.boredom < 100) {
             pet.boredom += 10;
             updateStats();
         }
     });
-
+// sleep button function
     sleepButton.addEventListener("click", function () {
         if (pet.sleepiness < 100) {
             pet.sleepiness += 10;
@@ -78,7 +83,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    
+    // Function for pet images to change depending on the age
 
     function changePetImageByAge() {
         if (pet.age > 15) {
@@ -117,7 +122,7 @@ document.addEventListener("DOMContentLoaded", function () {
             clearInterval(pet.gameInterval);
             alert(`Game over! ${pet.name} has passed away.`);
 
-            // function of a gif to pop up on the page once your pet dies
+            // function for a gif to pop up on the page once your pet dies
             function showAlert() {
                 const alertContainer = document.getElementById("alert-container");
                 alertContainer.style.display = "block";
