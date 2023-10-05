@@ -16,7 +16,7 @@ h1 {
     text-align: center;
     color: deeppink;
 }
-/* Add your CSS styles here */
+
 
 .tamagotchi {
     margin: 20px;
@@ -66,4 +66,7 @@ button {
     color: fuchsia;
     font-size: xx-large;
     font-family: Chalkduster;
+}
+.tamagotchi-img.sleeping {
+    opacity: 0.5;
 }
